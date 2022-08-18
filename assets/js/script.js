@@ -59,7 +59,7 @@ hilang1.addEventListener('click', () => {
     imageUrl: "/assets/img/stiker_mylove.gif",
     imageHeight: 120,
     title: 'Halo Kenalan Dong, Nama Kamu Siapa ?',
-    html: `<input type="text" id="login" class="swal2-input" placeholder="Username">`,
+    html: `<input type="text" id="login" class="swal2-input" placeholder="Nama Kamu">`,
     confirmButtonText: 'Kirim',
     focusConfirm: false,
     preConfirm: () => {
