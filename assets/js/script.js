@@ -13,6 +13,7 @@ const hari = waktu.querySelector('p')
 const bg1 = document.querySelector('.background1')
 const bg2 = document.querySelector('.background2')
 const body = document.querySelector('.body')
+const audio = document.querySelector('.audio')
 
 body.classList.add('background1')
 
@@ -42,6 +43,7 @@ if (pengirim) {
 }
 
 btnPlay.addEventListener('click', () => {
+  audio.play()
   messege1.style.display = "block";
   messege1.style.transform = "translateX(0)"
   btnPlay.style.display = "none";
@@ -54,7 +56,7 @@ hilang1.addEventListener('click', () => {
   hilang1.style.display = "none"
   hilang2.style.display = "block"
   Swal.fire({
-    imageUrl: "https://dekatutorial.github.io/stiker_mylove.gif",
+    imageUrl: "/assets/img/stiker_mylove.gif",
     imageHeight: 120,
     title: 'Halo Kenalan Dong, Nama Kamu Siapa ?',
     html: `<input type="text" id="login" class="swal2-input" placeholder="Username">`,
